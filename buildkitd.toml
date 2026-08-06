@@ -1,0 +1,2 @@
+[registry."repro-reg:5000"]
+  http = true
