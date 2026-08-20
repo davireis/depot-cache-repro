@@ -1,5 +1,8 @@
 # Registry cache-from vs evicted blobs — minimal repro
 
+> **[BUG.md](BUG.md)** explains the defect and why it matters. This file is the
+> protocol and the raw observations.
+
 **Claim under test**: when a registry cache manifest matches but its layer blobs
 have been deleted (quota eviction), the build should degrade to a cache MISS and
 re-execute. Instead it hard-fails.
